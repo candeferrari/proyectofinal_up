@@ -1,0 +1,164 @@
+@import "colores";
+* {box-sizing: border-box;}
+p{
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  color: $gray;
+}
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 10px;
+  color: $cyan;
+  display: block;
+  width: 100%;
+  padding: 10%;
+  text-align: center;
+}
+.jumbotron {
+  background-image: url(imagenes/head.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  text-align: center;
+}
+.col-lg-logo {
+  position: absolute;
+  top: 50px;
+  transform: translate(-50%, -50%);
+  max-width: 10px;
+  height: 0px;
+  left: 50px;
+}
+.col-lg {
+  top: 150px;
+  left: 150px;
+  text-align: center;
+  font-family: 'motserrat';
+  color: white;
+  font-size: 40px;
+}
+.redes {
+  padding: 200px;
+  grid-area: "redes";
+ }
+ .caja_head_menuredes {
+  position: fixed;
+  top: 10px;
+  background-color: $pink;
+  border-radius: 20px;
+  
+  padding: 20px;
+  display: block;
+  color: white;
+  right: 0;
+}
+/*media celu*/
+@media (max-width: 768px) {
+  .col-lg-logo {
+    /* PARA MENOS DE 768px*/
+    top: 20px;
+    transform: translate(-10%, -10%);
+    max-width: 0px;
+    height: 0px;
+    left: 0px;
+  }
+  .col-lg {
+    top: 320px;
+    left: 0px;
+    text-align: center;
+    font-family: 'motserrat';
+    color: white;
+    font-size: 25px;
+  }
+}
+/*media notbook*/
+@media screen and (min-width:768px) and (max-width:1050px){
+ .col-lg {
+    top: 200px;
+    left: 320px;
+    text-align: center;
+    font-family: 'motserrat';
+    color: white;
+    font-size: 25px;
+  }
+}
+/*media pantalla grande*/
+@media (min-width:1050px) {
+  .col-lg {
+     top: 230px;
+     left: 320px;
+     text-align: center;
+     font-family: 'motserrat';
+     color: white;
+     font-size: 40px;
+   }
+ }
+ .container {
+  display: grid;
+  grid-template-rows: repeat(3, auto) ; 
+  grid-template-columns: auto auto;
+  grid-template-areas: "uno dos" "tres cuatro" "cinco seis";
+  text-align: center;
+  left: 0px;
+}
+/*media novedades*/
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-rows: (6,200px);
+    grid-template-columns: 500px;
+    grid-template-areas: 
+    "uno" "dos" "cuatro" "tres" "cinco" "seis";
+    padding: 5px;
+  }
+}
+​
+/*boton ver más*/
+.button {
+  background-color: white; 
+  border: none;
+  color: $gray;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.button1 {
+  background-color: white; 
+  color: $gray; 
+  border: 2px solid $pink;
+}
+
+.button1:hover {
+  background-color: $yellow;
+  color: white;
+}
+
+.footer{
+  background-image: url(imagenes/footer.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  height: 200px;
+}
+/*NUESTRO SERVICIOS*/
+.display-4 { /*para titulos*/
+  padding: 20px;
+  color: $cyan;
+}
+.featurette-heading { /*PARA TITULOS DE TEXTO*/
+ 
+  border-top-color: $cyan;
+
+}
