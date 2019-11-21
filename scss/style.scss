@@ -3,7 +3,7 @@
 p{
   text-align: left;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 15px;
+  font-size: 20px;
   display: block;
   width: 100%;
   color: $gray;
@@ -18,7 +18,7 @@ h2 {
   text-align: center;
 }
 .jumbotron {
-  background-image: url(imagenes/head.png);
+  background-image: url("../imagenes/head-01.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -50,7 +50,6 @@ h2 {
   top: 10px;
   background-color: $pink;
   border-radius: 20px;
-  
   padding: 20px;
   display: block;
   color: white;
@@ -145,12 +144,26 @@ h2 {
 }
 
 .footer{
-  background-image: url(imagenes/footer.png);
+  background-image: url("../imagenes/footer.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   text-align: center;
-  height: 200px;
+  height: 120px;
+  
+}
+.footer-text p{
+  position: absolute;
+  font-size: 15px;
+  font-family: monospace;
+  color: white;
+  top: 60px;
+  left: 300px;
+    a{
+      color: $amarillo;
+    }
+ 
+
 }
 /*NUESTRO SERVICIOS*/
 .display-4 { /*para titulos*/
@@ -158,7 +171,136 @@ h2 {
   color: $cyan;
 }
 .featurette-heading { /*PARA TITULOS DE TEXTO*/
- 
   border-top-color: $cyan;
 
+
+}
+
+.contenedorequipo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+}
+
+/* TEXTO NOVEDADES */
+.col {
+  padding: 10px;
+}
+/* contaduria */
+.mb-4 {
+  display: block;
+  background-color:$cyan;
+  font-family: 'Roboto';
+  font-size: 30px;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+
+/*SECIONES*/
+#recursoshumanos{
+  background-color: #f6f6f6;
+}
+#legales{
+  background-color: #f6f6f6;
+}
+.col-lg-3 p {
+  font-size: 20px;
+  padding: 15px;
+}
+h4 {
+  color: #f45905;
+}
+.service-1-title h2{
+  background-color: #f45905;
+  color: white;
+  border-radius: 15px;
+  padding: 37px;
+  font-family: 'roboto';
+}
+
+.icon-estrategia {
+  background-color: $rosa;
+}
+.icon-media {
+  background-color: $celeste;
+}
+.icon-multi {
+  background-color: $naranja;
+}
+.icon-branding {
+  background-color: $amarillo;
+  
+}
+.icon-mkt {
+  background-color: $azul;
+}
+.icon-valor {
+  background-color: $violeta;
+}
+
+.text-estrategia {
+  color: $amarillo;
+}
+.text-media {
+  color: $violeta;
+}
+.text-multi {
+  color: $azul;
+}
+.text-mkt {
+  color: $rosa;
+}
+.text-branding {
+  color: $celeste;
+}
+.text-valor {
+  color: $naranja;
+}
+
+/*Equipo*/
+.btn-linkedin{
+  background-color: $cyan;
+  color: white;
+  font-size: 15px;
+  padding: 15px;
+  border-radius: 25px;
+}
+/*CONTACTO*/
+.awe-section {
+  padding: 50px;
+}
+.contact {
+  padding: 10px;
+}
+/*BUSQUEDA*/
+.container-busqueda {
+  background-color: white;
+  padding: 1%;
+}
+.meta {
+  background-color: $naranja;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.h-entry {
+  background-color: white;
+}
+.col-md-6  {
+  background-color: white;
+}
+.mb-4 {
+  font-size: 20px;
+}
+/*CLIENTES*/
+.col-12 h4{
+  text-align: center;
+  background-color: $rosa;
+  color: white;
+  width: 800px;
+  left: 10px;
+  padding: 20px;
+  border-radius: 25px;
 }
